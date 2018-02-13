@@ -27,7 +27,7 @@ class Triangle
     end
   end
 
-  def sides_equal                      # count number of matching sides
+  def sides_equal                     # count number of matching sides
     frequency = Hash.new(0)
     sides.each {|i| frequency[i] += 1}
     frequency.values.sort[-1]         # returns biggest frequency
